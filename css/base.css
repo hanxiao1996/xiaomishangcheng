@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    height: 0;
+    list-style: none;
+    font-family: "微软雅黑","宋体";
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #FFFFFF;
+}
+img{
+    border: none;
+}
