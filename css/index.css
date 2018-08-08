@@ -557,6 +557,7 @@ h3{
     border-bottom: 2px solid rgba(0,0,0,0.0);
     padding-bottom:4px;
     float:right;
+    font-size:16px ;
     margin-top:19px;
     cursor: pointer;
     margin-left: 15px;
@@ -612,6 +613,7 @@ h3{
     margin: 0 auto;
     text-align: center;
     font-size: 15px;
+    color: #fff;
 }
 .context{
     background: #ffffff;
@@ -856,13 +858,20 @@ h3{
     width:100%;
     height: 220px;
 }
-.HotProduct_bottom .word1{
+.HotProduct_bottom .word1 a{
     width: 240px;
     height: 70px;
+    color: #000;
+    font-weight: normal;
     margin-top: 33px;
     margin-left:22px;
     background: #FFFFFF;
     font-size: 15px;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;
+    line-height:25px;
+    overflow:hidden;
 }
 .HotProduct_bottom .word2{
     width:240px;
@@ -1098,55 +1107,56 @@ h3{
 /*特效制作*/
 /*向上平移特效*/
 .plan:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .plan:hover .move_up{
+    transition: all 1s 0.1s linear;
     bottom: 0;
 }
 .bottom1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .plan_bottom1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .plan_top:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .left1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .Recommend li:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .content_lists .list:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .HotProduct_bottom:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .video1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .right1 .plan_bottom1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .right1 .plan:hover {
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 .phone_main .left1:hover{
-    transform: translateY(-10px);
-    box-shadow:0 4px 10px 2px rgba(0,0,0,0.6) ;
+    transform: translateY(-5px);
+    box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
 
 /*隐藏盒子上浮制作*/
