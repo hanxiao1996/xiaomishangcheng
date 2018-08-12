@@ -722,7 +722,6 @@ h3{
 .phone_main .left1{
     width: 234px;
     height: 614px;
-    background:red;
     float: left;
     margin-right: 14px;
     transition: all  0.3s 0.1s linear;
