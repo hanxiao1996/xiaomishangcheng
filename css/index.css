@@ -89,6 +89,9 @@ a{
 }
 #shop_footer{
     width: 319px;
+    font-size:12px;
+    text-align: center;
+    line-height: 100px;
     height:0;
     position: absolute;
     top:40px;
@@ -149,26 +152,27 @@ a{
     margin-right: 0px;
 }
 .search{
-    width: 269px;
+    width: 300px;
     height: 50px;
     margin-top: 25px;
     float: right;
     background:#fff;
 }
 .search input{
-    width: 220px;
+    width: 245px;
     height: 100%;
     border: 1px solid #f0f0f0;
     float: left;
+    outline: none;
 }
 .search i{
-    width: 30px;
-    height: 35px;
+    width: 50px;
+    height:50px;
     display: block;
-   font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
     float: left;
-    padding-top: 15px;
-    padding-left: 8px;
     color: #333333;
     border: 1px solid #f0f0f0;
     cursor: pointer;
@@ -360,6 +364,7 @@ h3{
     height: 100%;
     text-align: center;
     color: #fa653a;
+    margin: 0 auto;
     font-size: 12px;
     background: #FFFFFF;
 }
@@ -476,13 +481,22 @@ h3{
 
 }
 .SideNavigation .GT{
-    width:795px;
-    height: 460px;
+    width:990px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    height: 458px;
     position: absolute;
     top: 0;
     left:234px;
-    background: #01FBFB;
+    background: #ffffff;
     display: none;
+}
+.SideNavigation .GT .CDphone{
+    width: 205px;
+    height: 40px;
+    font-size: 16px;
+    color: #000;
+    padding:18px 20px ;
+    float: left;
 }
 .SideNavigation .left{
     width: 100%;
@@ -603,21 +617,19 @@ h3{
     color:#000000;
     font-size: 18px;
 }
-.right a{
+.right li{
     border-bottom: 2px solid rgba(0,0,0,0.0);
+    color: #000;
     padding-bottom:4px;
+    width: auto;
+    height:auto;
     float:right;
     font-size:16px ;
     margin-top:19px;
     cursor: pointer;
     margin-left: 15px;
 }
-.right a:hover{
-    border-bottom: 2px solid #ff6700;
-    color: #ff6700;
-}
-.right a:first-child{margin-right:0px;
-}
+.right li:first-child{margin-right:0;}
 /*家电主体*/
 .household_main{
     width: 100%;
@@ -633,8 +645,70 @@ h3{
 }
 .household_main_right{
     width:978px;
-    height:100%;
+    height:615px;
+    position: relative;
 }
+.household_main .house1{
+    width: 978px;
+    height: 615px;
+    background: #f5f5f5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.household_main_right .Intelligence2{
+    width:978px;
+    height:615px;
+    position: relative;
+}
+.household_main .Intelligence1{
+    width: 978px;
+    height: 615px;
+    background: #f5f5f5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.household_main_right .collocation2{
+    width:978px;
+    height:615px;
+    position: relative;
+}
+.household_main .collocation1{
+    width: 978px;
+    height: 615px;
+    background: #f5f5f5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.household_main_right .parts2{
+    width:978px;
+    height:615px;
+    position: relative;
+}
+.household_main .parts1{
+    width: 978px;
+    height: 615px;
+    background: #f5f5f5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.household_main_right .periphery2{
+    width:978px;
+    height:615px;
+    position: relative;
+}
+.household_main .periphery1{
+    width: 978px;
+    height: 615px;
+    background: #f5f5f5;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 .household_main .plan{
     width: 234px;
     height: 301px;
@@ -821,7 +895,10 @@ h3{
 }
 
 .top .right  a{
+    display: block;
+    margin-top: 15px;
     float: right;
+    font-size: 18px;
 }
 /*图片居中*/
 .phpto_in{
@@ -969,29 +1046,80 @@ h3{
     width: 1226px;
     height:420px;
     background:#f5f5f5;
+    display: flex;;
+    justify-content: space-between;
+    align-content: space-between;
 }
-.content_lists .list{
+.content_lists .content1{
     width: 296px;
-    height: 374px;
+    height: 420px;
+    position: relative;
     background:#ffffff;
     margin-right: 14px;
     margin-bottom: 14px;
-    padding-top:45px;
     float: left;
     transition: all  0.3s 0.1s linear;
-
+    overflow: hidden;
 }
-.list:last-child{
+.content_lists .content1 .list{
+    width: 296px;
+    height:300px;
+    background: #ffffff;
+    position: absolute;
+    left: 296px;
+    top:87px ;
+}
+.content_lists .content1 .btnL{
+    width:20px;
+    height: 48px;
+    background:url("../img/choice.png") no-repeat -40px;
+    background-size: 80px 48px;
+    position: absolute;
+    left: 0px;
+    background: #ffffff;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    z-index:999;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.content_lists .content1:hover .btnL{
+background:url("../img/choice.png") no-repeat 0px;
+background-size: 80px 48px;
+}
+.content_lists .content1:hover .btnR{
+    background:url("../img/choice.png") no-repeat -20px;
+    background-size: 80px 48px;
+}
+.content_lists .content1 .btnR{
+    width:20px;
+    height: 48px;
+    background:url("../img/choice.png") no-repeat -60px;
+    background-size: 80px 48px;
+    background: #ffffff;
+    position: absolute;
+   right: 0px;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    z-index:999;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.content1:last-child{
     margin-right: 0;
 }
-.content_lists .book_box{
+.content1 .book_box{
     width: 276px;
     height: 24px;
+    padding-top:45px;
     margin: 0 10px 18px;
     text-align: center;
     line-height: 24px;
     font-weight: normal;
     font-size: 16px;
+    background: #ffffff;
 }
 .content_lists h4{
     text-align: center;
@@ -1024,25 +1152,37 @@ h3{
 .littles{
     width: 296px;
     height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    bottom: 20px;
     text-align: center;
+
 }
 .littles span{
     display: inline-block;
-    width: 6px;
-    height:6px;
+    width: 2px;
+    height:2px;
     border: 2px solid rgba(0,0,0,0.0);
     background:#b0b0b0;
     border-radius: 50%;
     margin-right: 28px;
     cursor: pointer;
 }
-.littles span:hover{
+
+.littles .scrile1{
+    width:6px;
+    height:6px;
+    background: #ffffff;
     border: 2px solid rgba(255,103,0,1.0);
 }
 .littles span:last-child{
     margin-right: 0px;
 }
 .list_one{
+    width:296px;
     border-top:1px solid #ffb813;
 }
 .list_two{
@@ -1181,7 +1321,7 @@ h3{
     transform: translateY(-5px);
     box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
-.content_lists .list:hover{
+.content1:hover{
     transform: translateY(-5px);
     box-shadow:0 2px 10px 2px rgba(0,0,0,0.1) ;
 }
