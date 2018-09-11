@@ -121,6 +121,7 @@ a{
     height: 100px;
     background: #ffffff;
     margin:0 auto;
+    position: relative;
 }
 .logo{
     display: block;
@@ -130,26 +131,102 @@ a{
     float: left;
 }
 .nav{
-    width: 600px;
+    width: 650px;
     height:100%;
     margin-left: 189px;
     background: #ffffff;
     float: left;
 }
 
-.nav li{
-    margin-right: 20px ;
+.nav .nav1{
+    padding-right: 20px ;
     float: left;
+    box-sizing: border-box;
    line-height:100px;
     cursor:pointer;
     background: #FFFFFF;
 }
-.nav li:hover{
+.nav .nav1:hover{
     color:#ff6700;
 }
+.xl{
+    width: 100%;
+    height: 0;
+    background:#FFFFFF;
+    position:absolute;
+    top: 100px;
+    left:0;
+    z-index: 500;
+    overflow: hidden;
+    transition: height 1s;
 
-.nav .last{
+}
+body .xl ul{
+    width:1226px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    border-top: 1px solid #E0E0E0;
+    justify-content: space-between;
+}
+ .xl ul li{
+    width: 203px;
+    height: 100%;
+    background: #ffffff;
+    padding:0 12px 0;
+    position: relative;
+    box-sizing: border-box;
+}
+ .xl ul li img{
+    display: block;
+    width: 160px;
+    height: 110px;
+    margin:35px auto 16px;
+}
+.nav1:last-child{
     margin-right: 0px;
+}
+ .xl ul li a{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+ .xl ul li p{
+     line-height: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #ff6700;
+}
+.xl ul li a{
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+}
+body .xl ul li .Identification{
+    width:40px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff6700;
+    padding:0 10px 0;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #ff6700;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right:auto;
+}
+body .xl ul li .right_online{
+    width: 1px;
+    height:110px;
+    background: #E0E0E0;
+    position: absolute;
+    top:35px;
+    right: 0;
 }
 .search{
     width: 300px;
@@ -184,28 +261,31 @@ a{
 }
 .buy{
     width: 1226px;
-    height: 399px;
+    height: 411px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .title{
-    width:100%;
+    width:1226px;
+    height:70px;
+    margin: 0 auto;
 }
 .title_left {
-    font-weight: 200;
+    font-weight:200;
     width: 88px;
-    height: 59px;
-    line-height: 59px;
+    height: 70px;
+    line-height: 70px;
     float: left;
     font-size: 21px;
 }
-.title:after{
-    content:"";
-    display:block;
-    clear:both;
-    width:0;
-    height:0;
-    line-height:0;
-}
+/*.title:after{*/
+    /*content:"";*/
+    /*display:block;*/
+    /*clear:both;*/
+    /*width:0;*/
+    /*height:0;*/
+    /*line-height:0;*/
+/*}*/
 .title_right{
     width: 71px;
     height: 24px;
@@ -230,22 +310,33 @@ a{
     float: right;
     text-align: center;
 }
-.show{
-    width:1226px;
+.buy .show{
+    width: 978px;
     height:341px;
-    background:#ffffff;
-    margin: 0 auto;
+    float: left;
+    overflow: hidden;
 }
-.show li{
+.buy .show ul{
+    width: 3224px;
+    height:341px;
+    float: left;
+    transition: all 0.5s;
+
+}
+.buy .show ul li{
     width: 234px;
-    height: 340px;
-    background:#ffffff;
+    height: 341px;
+    background:#fafafa;
     margin-right: 14px;
     float: left;
 }
-.show .one{
+.buy .one{
     border-top:1px solid #e53935;
     background:#f1eded ;
+    width: 234px;
+    height: 341px;
+    margin-right: 14px;
+    float: left;
 }
 .show .two{
     border-top:1px solid #ffac13;
@@ -259,9 +350,8 @@ a{
     border-top:1px solid #2196f3;
     background:#fafafa;
 }
-.show .five{
+.show ul .five{
     border-top:1px solid #e53935;
-    margin-right:0px ;
     background:#fafafa;
 }
 h3{
@@ -424,6 +514,10 @@ h3{
 .banner .scrile .point{
     background: rgba(255,255,255,1.0);
 }
+.banner .imgbox{
+    width: 1226px;
+    height: 460px;
+}
 .banner .imgbox li{
     width:1226px;
     height: 460px;
@@ -527,6 +621,7 @@ h3{
     width: 1226px;
     height:170px ;
     margin: 15px auto;
+
 }
 .Recommendation_box_left{
     width:234px;
@@ -599,8 +694,8 @@ h3{
 /*家电部分*/
 .household{
     width: 1226px;
-    height: 674px;
-    margin: 30px auto;
+    height: 685px;
+    margin: 20px auto 0;
 }
 .household .top{
     width: 100%;
@@ -826,7 +921,7 @@ h3{
 /*手机部分*/
 .phone{
     width: 1226px;
-    height: 673px;
+    height: 684px;
     margin: 10px auto;
 }
 .phone .top{
@@ -906,10 +1001,11 @@ h3{
 }
 /*为你推荐部分*/
 .Recommend{
-    width:1226px;
+    width:3678px;
     height:341px;
     background:#F5F5F5;
     margin: 0 auto;
+    transition: all 0.5s;
 }
 .Recommend li{
     width: 234px;
@@ -919,7 +1015,7 @@ h3{
     float: left;
     transition: all  0.3s 0.1s linear;
 }
-.Recommend .five{
+.Recommend li:nth-child(5n){
     margin-right:0px ;
 }
 .writing5{
@@ -950,21 +1046,18 @@ h3{
 /*热门产品*/
 .HotProduct{
     width:1226px;
-    height: 473px;
+    height: 419px;
     margin: 0 auto;
     background:#f5f5f5;
 }
 .HotProduct_top{
-    width: 100%;
-    height: 58px;
+    width:1226px;
+    height: 70px;
+    margin:0 auto ;
     background:#f5f5f5;
-    line-height: 58px;
-}
-.HotProduct_top_left{
-    font-size: 23px;
+    font-size: 21px;
+    line-height: 70px;
     font-weight: 200;
-    float: left;
-    color: #333333;
 }
 .HotProduct_bottom{
     width: 296px;
